@@ -108,3 +108,13 @@ Use the webcam image stream and draw something on it. Animate one of the drawing
 - [empty code](./BC_tutorial_05_empty.py)
 - [complete code](./BC_tutorial_05.py)
 
+
+### Tutorial #6
+Analyze the webcam image stream and draw points at the mouse position on the image
+- [empty code](./BC_tutorial_06_empty.py)
+- [complete code](./BC_tutorial_06.py)
+
+### Tutorial #7
+Geometric transformations a.k.a. image warping.
+- [empty code](./BC_tutorial_07_empty.py)
+- [complete code](./BC_tutorial_07.py)

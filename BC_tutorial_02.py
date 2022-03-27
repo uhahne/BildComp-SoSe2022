@@ -1,4 +1,5 @@
 import cv2
+import numpy as np
 
 # loading images in grey and color
 img_gray = cv2.imread('images/logo.png', cv2.IMREAD_GRAYSCALE)
@@ -12,11 +13,11 @@ print(img_gray.shape)  # prints the size of the image array
 print(img_color.shape)  # prints the size of the image array
 
 # Continue with the color image
-# img = imgColor
+img = img_color
 
 # Continue with the grayscale image
 # img = img_gray
-img = img_gray.copy()
+# img = img_gray.copy()
 
 # Extract the size or resolution of the image
 height = img.shape[0]
@@ -43,14 +44,21 @@ print('width = ' + str(img.shape[1]))
 #     for j in range (width):
 #         img[i][j] = [0,0,0]
 
-# find all used colors in the image
+# find all used greyscale values in the image
 colors = []
-for i in range(height):
-    for j in range(width):
-        curr_color = img[i, j]
-        if colors.count(curr_color) == 0:
-            colors.append(curr_color)
-print('Those gray values are in the image:\n ' + str(colors))
+if (img.ndim == 2):
+    for i in range(height):
+        for j in range(width):
+            curr_color = img[i, j]
+            if colors.count(curr_color) == 0:
+                colors.append(curr_color)
+    print('Those gray values are in the image:\n ' + str(colors))
+elif (img.ndim == 3):
+    # source: https://stackoverflow.com/questions/51705187/list-of-all-colors-in-an-image-using-opencv-and-python
+    all_rgb_codes = img.reshape(-1, img.shape[-1])
+    unique_rgb_codes = np.unique(all_rgb_codes, axis=0, return_counts=False)
+    print('Those color values are in the image:\n ' + str(unique_rgb_codes))
+
 
 # copy one part of an image into another one
 letters = img[30:105, 5:130]
