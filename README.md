@@ -118,3 +118,13 @@ Analyze the webcam image stream and draw points at the mouse position on the ima
 Geometric transformations a.k.a. image warping.
 - [empty code](./BC_tutorial_07_empty.py)
 - [complete code](./BC_tutorial_07.py)
+
+### Tutorial #8
+Clicking points to define lines and compute intersection points
+- [empty code](./BC_tutorial_08_empty.py)
+- [complete code](./BC_tutorial_08.py)
+
+### Tutorial #9
+Computing vanishing points and lines 
+- [empty code](./BC_tutorial_09_empty.py)
+- [complete code](./BC_tutorial_09.py)
