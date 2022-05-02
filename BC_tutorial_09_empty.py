@@ -5,7 +5,7 @@ import numpy as np
 
 
 # load image
-img = cv2.imread('images/IMG_3250.JPEG', cv2.IMREAD_COLOR)
+img = cv2.imread('images/table_bottle_01.jpg', cv2.IMREAD_COLOR)
 height, width, _ = img.shape
 
 
@@ -22,6 +22,6 @@ def getIntersectionPosition(line1, line2):
 
 # TODO Draw the original image region and vanishing points in the large image
 
-# TODO Draw the vanishing line between 
+# TODO Draw the vanishing line between
 
 # TODO create a window for the image
