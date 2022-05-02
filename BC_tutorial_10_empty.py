@@ -1,5 +1,5 @@
 # Code inspired from
-# OpenCV tutorial on stereo depthmaps https://docs.opencv.org/4.5.5/dd/d53/tutorial_py_depthmap.html 
+# OpenCV tutorial on stereo depthmaps https://docs.opencv.org/4.5.5/dd/d53/tutorial_py_depthmap.html
 # and https://learnopencv.com/introduction-to-epipolar-geometry-and-stereo-vision/
 import cv2
 import numpy as np

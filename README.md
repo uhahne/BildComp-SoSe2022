@@ -108,7 +108,6 @@ Use the webcam image stream and draw something on it. Animate one of the drawing
 - [empty code](./BC_tutorial_05_empty.py)
 - [complete code](./BC_tutorial_05.py)
 
-
 ### Tutorial #6
 Analyze the webcam image stream and draw points at the mouse position on the image
 - [empty code](./BC_tutorial_06_empty.py)
@@ -128,3 +127,13 @@ Clicking points to define lines and compute intersection points
 Computing vanishing points and lines 
 - [empty code](./BC_tutorial_09_empty.py)
 - [complete code](./BC_tutorial_09.py)
+
+### Tutorial #10
+Computing depth map from a pair of rectified stereo images 
+- [empty code](./BC_tutorial_10_empty.py)
+- [complete code](./BC_tutorial_10.py)
+
+### Tutorial #11
+Extracting the intrinsic camera parameters from an image
+- [empty code](./BC_tutorial_11_empty.py)
+- [complete code](./BC_tutorial_11.py)

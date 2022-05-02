@@ -19,7 +19,8 @@ import numpy as np
 
 # TODO Extract image resolution
 
-# TODO Compute fx, fy, cx, cy using sensor size information as proposed here: http://phototour.cs.washington.edu/focal.html
+# TODO Compute fx, fy, cx, cy using sensor size information as proposed here:
+# http://phototour.cs.washington.edu/focal.html
 # focal length in pixels = (image width in pixels) * (focal length in mm) / (CCD width in mm)
 # Exemplary iPhone 8 image sensor size from https://www.dpreview.com/forums/thread/4206729 and
 # https://en.wikipedia.org/wiki/Image_sensor_format#Table_of_sensor_formats_and_sizes
