@@ -9,7 +9,7 @@ import numpy as np
 
 # TODO Get all Exif tags
 
-# TODO Read the EXIF FOcalLength tag and compute the value from it
+# TODO Read the EXIF FocalLength tag and compute the value from it
 
 # TODO print the computed focal length as float value
 
