@@ -137,3 +137,8 @@ Computing depth map from a pair of rectified stereo images
 Extracting the intrinsic camera parameters from an image
 - [empty code](./BC_tutorial_11_empty.py)
 - [complete code](./BC_tutorial_11.py)
+
+### Tutorial #12
+Computing the fundamental matrix from point correspondencies which are found with SIFT
+- [empty code](./BC_tutorial_12_empty.py)
+- [complete code](./BC_tutorial_12.py)
