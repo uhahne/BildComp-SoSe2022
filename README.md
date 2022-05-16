@@ -142,3 +142,8 @@ Extracting the intrinsic camera parameters from an image
 Computing the fundamental matrix from point correspondencies which are found with SIFT
 - [empty code](./BC_tutorial_12_empty.py)
 - [complete code](./BC_tutorial_12.py)
+
+### Tutorial #13
+Seam carving as example for dynamic programming
+- [empty code](./BC_tutorial_13_empty.py)
+- [complete code](./BC_tutorial_13.py)

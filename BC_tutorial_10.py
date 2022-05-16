@@ -21,6 +21,8 @@ numDisparities = 64
 blockSize = 8
 disp12MaxDiff = 1
 uniquenessRatio = 10
+# see https://stackoverflow.com/questions/56953811/what-is-speckle-in-stereo-bm-and-sgbm-algorithm-implemented-in-opencv
+# for a good explanation for the speckle parameters
 speckleWindowSize = 10
 speckleRange = 8
 
@@ -32,6 +34,7 @@ stereo = cv2.StereoSGBM_create(minDisparity=minDisparity,
                                uniquenessRatio=uniquenessRatio,
                                speckleWindowSize=speckleWindowSize,
                                speckleRange=speckleRange)
+
 
 # Calculate disparity using the chosen stereo algorithm
 disp = stereo.compute(imgL, imgR).astype(np.float32)

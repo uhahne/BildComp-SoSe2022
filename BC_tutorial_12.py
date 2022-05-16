@@ -35,7 +35,10 @@ cv2.waitKey(0)
 
 # match the keypoints using a FlannBasedMatcher
 FLANN_INDEX_KDTREE = 1
+# see https://docs.opencv.org/4.5.5/db/d18/classcv_1_1flann_1_1GenericIndex.html#details
+# and https://en.wikipedia.org/wiki/K-d_tree
 index_params = dict(algorithm=FLANN_INDEX_KDTREE, trees=5)
+# see https://github.com/opencv/opencv/blob/4.x/modules/flann/include/opencv2/flann/params.h (l.60 ff)
 search_params = dict(checks=50)
 flann = cv2.FlannBasedMatcher(index_params, search_params)
 matches = flann.knnMatch(des1, des2, k=2)
